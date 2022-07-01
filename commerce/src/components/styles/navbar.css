@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    background-color: #abadb0;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-grid {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3rem;
+    padding: 2rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navlogo {
+    color: #eeee;
+    font-weight: 600;
+}
+
+.nav-list {
+    display: flex;
+    align-items: right;
+}
+
+.nav-item {
+    margin: 0 8px;
+}
+
+.nav-link {
+    padding: 10px;
+    color: #eeee;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #00adb5;
+    
+}
+
+.header-toggle,.header-close {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-toggle {
+        display: none; 
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header-toggle {
+        display: inline;
+        color: #eeee;
+        font-size: 24px;
+    }
+
+    .nav-toggle {
+        cursor: pointer;
+    }
+
+    .header-close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+
+    .header-close:hover{
+        background-color: #00adb5;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #222831;
+        color: #eeee;
+        width: 70%;
+        height: 100vh;
+        padding: 24px 0;
+        text-align: center;
+        z-index: 100;
+        transition: 1s;
+        border-radius: 0 0 0 90%;
+        
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction:column;
+        margin-left: 3rem;
+    }
+
+    .nav-item {
+        margin: 2rem;
+    }
+
+    .show {
+        right:0 ;
+    }
+
+}

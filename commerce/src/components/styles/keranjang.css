@@ -1,0 +1,78 @@
+.item_keranjang{
+    display: inline-flex;
+    position: sticky;
+    width: 80%;
+    height: 5rem;
+    margin: 20px;
+    justify-content: center;
+}
+
+
+.container_item {
+    margin-left: 120px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    background: var(--dark-color-lighten);
+    padding: .3rem;
+    font-weight: normal;
+}
+.title_keranjang {
+    margin-left: 10%;
+}
+
+td .img {
+    border-radius: 3rem;
+}
+
+.jumlah_keranjang {
+    margin-left: 111px;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    padding: .5rem .2rem .3rem 1rem;
+    width: 4rem;
+    border-radius: .1rem;
+}
+
+td .button_keranjang {
+    color: red;
+}
+
+.total_price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total_price table {
+    border-top:  6px solid rgb(164, 164, 164);
+    width: 100%;
+    max-width: 390px;
+}
+
+td:last-child {
+    text-align: right;
+}
+th:last-child{
+    text-align: left;
+}
+
+table .button_keranjang {
+    display: flex;
+    justify-content: center;
+}
+
+table .button {
+    margin-top: 40px;
+
+}
